@@ -4,7 +4,7 @@ import Leopard
 let server = try WebServer()
 
 // TODO: Set up routes
-server.get {
+server.get { _ in
   return Future { "Hello world" }
 }
 
